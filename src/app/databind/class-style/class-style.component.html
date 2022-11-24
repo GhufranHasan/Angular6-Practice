@@ -1,0 +1,23 @@
+<!-- ********************** Class Binding ***************************** -->
+<!-- <div class="box" [class.myClass]="mypro">Class Binding</div> -->
+
+<!-- ********************* Style Binding ***************************** -->
+<!-- Case 1: Normal Style Binding -->
+<!-- <div class="box" [style.margin]="myStyle">Class Binding</div> -->
+<!-- Case 2: Style Binding with applying ternary operator -->
+<!-- <div class="box" [style.margin]="isActive? myStyle1 : myStyle2">Class Binding</div> -->
+
+<!-- ********************* NgClass Binding ***************************** -->
+<!-- Case 1: Normal NgClass Bindiing -->
+<!-- <div class="box" [ngClass]="'class1 class2 class3'">Class Binding</div> -->
+<!-- Case 2: NgClass Bindiing by using variable -->
+<!-- <div class="box" [ngClass]="multiClass">Class Binding</div> -->
+
+<!-- ********************* NgStyle Binding ***************************** -->
+<!-- Case 1: Normal NgStyle Binding -->
+<!-- <div class="box" [ngStyle]="{
+    'background':'red',
+    'border': '10px solid green'
+}">Class Binding</div> -->
+<!-- Case 2: NgStyle Binding by using variable -->
+<div class="box" [ngClass]="multiStyle">Style Binding</div>
