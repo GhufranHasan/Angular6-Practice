@@ -1,0 +1,14 @@
+<!-- <p>My name is {{dynName}}.</p> -->
+<!-- <br><br><br> -->
+<p>My app status is <strong>{{appStatus? status1: status2}}</strong></p>
+<br><br><br>
+<!-- Interpolation -->
+<!-- <input type="text" name="" id="" value="{{dynName}}">  -->
+
+<!-- ******************** Property Binding **************************** -->
+<!-- Case 1: brackets surrounds of value and disabled -->
+<input type="text" [disabled]="true" name="" id="" [value]="dynName">
+<br><br><br>
+<!-- Case 2: brackets surrounds of value and hidden -->
+<input type="text" [hidden]="false" name="" id="" [value]="dynName">
+<br><br><br>
