@@ -8,6 +8,7 @@ import { TopnavComponent } from './myContainer/topnav/topnav.component';
 import { HeaderComponent } from './myContainer/header/header.component';
 import { Txtsec1Component } from './myContainer/txtsec1/txtsec1.component';
 import { Txtsec2Component } from './myContainer/txtsec2/txtsec2.component';
+import { DatabindComponent } from './databind/databind.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Txtsec2Component } from './myContainer/txtsec2/txtsec2.component';
     TopnavComponent,
     HeaderComponent,
     Txtsec1Component,
-    Txtsec2Component
+    Txtsec2Component,
+    DatabindComponent
   ],
   imports: [
     BrowserModule,
