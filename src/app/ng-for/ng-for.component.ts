@@ -16,9 +16,33 @@ export class NgForComponent implements OnInit {
     { prodImg: 'https://toppng.com/public/uploads/preview/computer-desktop-11530975870kapnlhkoxb.png', prodName: 'Computer', prodID: 'pro06', prodPrice: 50000}
   ]
 
+  users = Array();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+// ********************************** Youtube video comment ***********************
+  // public user = Array();
+
+  // onclick(data:any){
+  //   this.user.push({myname:data.value});
+  //  data.value = "";
+  // }
+// *********************************************************************************
+
+  onCreateUser(uname: any){
+    this.users.push({
+      username: uname.value
+    });
+  }
+
+  onRemoveUser(uname: any){
+    this.users.splice(this.users.length - 1);
+  }
+
+  onRemoveUserItem(item: number){
+    this.users.splice(item, 1)
   }
 
 }
