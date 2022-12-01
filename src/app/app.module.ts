@@ -20,6 +20,10 @@ import { TwoWayComponent } from './databind/two-way/two-way.component';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +39,11 @@ import { NgForComponent } from './ng-for/ng-for.component';
     TwoWayComponent,
     NgifComponent,
     NgSwitchComponent,
-    NgForComponent
+    NgForComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
