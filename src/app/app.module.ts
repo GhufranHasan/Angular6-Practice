@@ -25,6 +25,13 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductsComponent } from './products/products.component';
 import { LoginComponent } from './login/login.component';
+import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
+import { LaptopComponent } from './products/laptop/laptop.component';
+import { MobileComponent } from './products/mobile/mobile.component';
+import { TabletComponent } from './products/tablet/tablet.component';
+import { ComputerComponent } from './products/computer/computer.component';
+import { WashingMachineComponent } from './products/washing-machine/washing-machine.component';
+import { TelevisionComponent } from './products/television/television.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +52,14 @@ import { LoginComponent } from './login/login.component';
     AboutComponent,
     ContactComponent,
     ProductsComponent,
-    LoginComponent
+    LoginComponent,
+    PageNotfoundComponent,
+    LaptopComponent,
+    MobileComponent,
+    TabletComponent,
+    ComputerComponent,
+    WashingMachineComponent,
+    TelevisionComponent
   ],
   imports: [
     BrowserModule,
