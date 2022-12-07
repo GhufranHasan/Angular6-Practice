@@ -32,6 +32,7 @@ import { TabletComponent } from './products/tablet/tablet.component';
 import { ComputerComponent } from './products/computer/computer.component';
 import { WashingMachineComponent } from './products/washing-machine/washing-machine.component';
 import { TelevisionComponent } from './products/television/television.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { TelevisionComponent } from './products/television/television.component'
     TabletComponent,
     ComputerComponent,
     WashingMachineComponent,
-    TelevisionComponent
+    TelevisionComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
