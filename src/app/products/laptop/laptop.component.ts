@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-laptop',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LaptopComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    // this.route.params.subscribe(params => console.log(params));
+   }
 
   ngOnInit(): void {
   }
