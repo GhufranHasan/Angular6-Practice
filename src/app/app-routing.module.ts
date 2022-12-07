@@ -1,3 +1,4 @@
+import { TelevisionComponent } from './products/television/television.component';
 import { WashingMachineComponent } from './products/washing-machine/washing-machine.component';
 import { ComputerComponent } from './products/computer/computer.component';
 import { TabletComponent } from './products/tablet/tablet.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
     { path: 'mobile', component: MobileComponent },
     { path: 'tablet', component: TabletComponent },
     { path: 'computer', component: ComputerComponent },
+    { path: 'television', component: TelevisionComponent },
     { path: 'washing-machine', component: WashingMachineComponent }
   ] },
   { path: '**', component: PageNotfoundComponent }
