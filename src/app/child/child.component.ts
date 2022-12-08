@@ -11,7 +11,7 @@ export class ChildComponent implements OnInit {
 
   @Input() productSelected: boolean = false;
   @Input() selectedProduct!: string;
-  @Input() addedProduct: any;
+  addedProduct: any;
 
   onAddProduct(){
     this.addedProduct = this.selectedProduct;
