@@ -1,0 +1,73 @@
+<div class="page-area">
+    <div class="text-center">
+        <h2>Buy Products</h2>
+    </div>
+    <div class="alert alert-light border d-flex align-items-center" *ngIf="addedProduct">
+        <strong class="text-success">{{addedProduct}}</strong>&nbsp;is selected and added in cart
+        <button class="btn btn-success ms-auto">Checkout</button>
+    </div>
+    <hr class="mb-3">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/images/png-clipart-gray-acer-laptop-laptop-laptop-notebook-electronics-gadget-thumbnail.png" class="card-img-top" alt="Laptop">
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title.</p> -->
+                  <a class="btn btn-success" (click)="onSelectProduct('Laptop')">Select this Product</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/images/png-clipart-mobile-decoration-cell-phone-frame-mobile-phone-thumbnail.png" class="card-img-top" alt="Mobile">
+                <div class="card-body">
+                  <h5 class="card-title">Mobile</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title.</p> -->
+                  <a class="btn btn-success" (click)="onSelectProduct('Mobile')">Select this Product</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/images/png-clipart-tablet-tablet-thumbnail.png" class="card-img-top" alt="Tablet">
+                <div class="card-body">
+                  <h5 class="card-title">Tablet</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title.</p> -->
+                  <a class="btn btn-success" (click)="onSelectProduct('Tablet')">Select this Product</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/images/png-clipart-desktop-computer-computer-graphics-computer-monitor-computer-purple-computer-network-thumbnail.png" class="card-img-top" alt="Computer">
+                <div class="card-body">
+                  <h5 class="card-title">Computer</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title.</p> -->
+                  <a class="btn btn-success" (click)="onSelectProduct('Computer')">Select this Product</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/images/png-clipart-television-graphy-television-tv-miscellaneous-electronics-thumbnail.png" class="card-img-top" alt="Television">
+                <div class="card-body">
+                  <h5 class="card-title">Television</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title.</p> -->
+                  <a class="btn btn-success" (click)="onSelectProduct('Television')">Select this Product</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/images/png-clipart-white-front-load-clothes-washer-washing-machine-laundry-home-appliance-washing-machine-electronics-clothes-dryer-thumbnail.png" class="card-img-top" alt="Washing Machine">
+                <div class="card-body">
+                  <h5 class="card-title">Washing Machine</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title.</p> -->
+                  <a class="btn btn-success" (click)="onSelectProduct('Washing Machine')">Select this Product</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-md-4">
+          <input type="text" placeholder="Search" [value]="myValue">
+        </div> -->
+        <!-- <app-child [placeholderText] = "myText"></app-child> -->
+        <app-child [productSelected] = "proSelected" [selectedProduct] = "selProduct"></app-child>
+        <!-- <div class="col-md-12 bg-success text-white text-center py-4">
+            <h2 *ngIf="!productSelected">Please select any Product</h2>
+            <h2 *ngIf="productSelected">{{selectedProduct}} is selected</h2>
+            <button class="btn btn-warning" (click)="onAddProduct()">Add To Cart</button>
+        </div> -->
+    </div>
+</div>
