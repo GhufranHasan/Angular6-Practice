@@ -33,6 +33,8 @@ import { ComputerComponent } from './products/computer/computer.component';
 import { WashingMachineComponent } from './products/washing-machine/washing-machine.component';
 import { TelevisionComponent } from './products/television/television.component';
 import { CardComponent } from './card/card.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { CardComponent } from './card/card.component';
     ComputerComponent,
     WashingMachineComponent,
     TelevisionComponent,
-    CardComponent
+    CardComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

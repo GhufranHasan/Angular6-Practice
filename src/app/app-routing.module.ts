@@ -1,3 +1,4 @@
+import { ParentComponent } from './parent/parent.component';
 import { TelevisionComponent } from './products/television/television.component';
 import { WashingMachineComponent } from './products/washing-machine/washing-machine.component';
 import { ComputerComponent } from './products/computer/computer.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'buy-products', component: ParentComponent },
   { path: 'products', component: ProductsComponent, children:[
     { path: '', component: ProductsComponent },
     { path: 'laptop', component: LaptopComponent },
