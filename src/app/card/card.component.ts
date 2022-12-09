@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DesignutilityService } from '../appServices/designutility.service';
 
 @Component({
   selector: 'app-card',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  products:any;
+
+  constructor(private _msgService: DesignutilityService) { }
 
   ngOnInit(): void {
+    this.products = this._msgService.product
+  }
+
+  btnClick(){
+    this._msgService.messageAlert();
   }
 
 }
