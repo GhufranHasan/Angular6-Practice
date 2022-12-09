@@ -23,6 +23,10 @@ export class ParentComponent implements OnInit {
     this.selProduct = product;
   }
 
+  onAddedProduct(proData: any){
+    this.addedProduct = proData;
+  }
+
   // onAddProduct(){
   //   this.addedProduct = this.selectedProduct;
   // }
