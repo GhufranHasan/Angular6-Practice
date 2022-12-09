@@ -35,6 +35,8 @@ import { TelevisionComponent } from './products/television/television.component'
 import { CardComponent } from './card/card.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { Card2Component } from './card2/card2.component';
+import { Card1Component } from './card1/card1.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +67,9 @@ import { ChildComponent } from './child/child.component';
     TelevisionComponent,
     CardComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    Card2Component,
+    Card1Component
   ],
   imports: [
     BrowserModule,
