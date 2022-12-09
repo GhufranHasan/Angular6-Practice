@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -11,10 +11,10 @@ export class ChildComponent implements OnInit {
 
   @Input() productSelected: boolean = false;
   @Input() selectedProduct!: string;
-  addedProduct: any;
+  @Output() addedProduct = new EventEmitter<any>();
 
   onAddProduct(){
-    this.addedProduct = this.selectedProduct;
+    this.addedProduct.emit(this.selectedProduct);
   }
 
   constructor() { }
