@@ -37,6 +37,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { Card2Component } from './card2/card2.component';
 import { Card1Component } from './card1/card1.component';
+import { DesignutilityService } from './appServices/designutility.service';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,9 @@ import { Card1Component } from './card1/card1.component';
     CarouselModule.forRoot(),
     CollapseModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    DesignutilityService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
