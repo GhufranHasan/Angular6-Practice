@@ -17,7 +17,7 @@ export class Comp4Component implements OnInit {
   ngOnInit(): void {
   }
 
-  userName: string = "Uxtrendz"
+  userName!: string
 
   updateUserName(uname: { value: string; }) {
     // this.userName = uname.value

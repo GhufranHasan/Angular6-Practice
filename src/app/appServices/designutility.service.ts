@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +21,8 @@ product(): Observable<any> {
   return this.http.get(this.url)
 }
 
-userName = new Subject<any>()
+// userName = new Subject<any>()
+userName = new BehaviorSubject('John Doe')
 
   constructor(private http: HttpClient) { }
 
