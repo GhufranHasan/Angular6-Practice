@@ -39,6 +39,10 @@ import { ChildComponent } from './child/child.component';
 import { Card2Component } from './card2/card2.component';
 import { Card1Component } from './card1/card1.component';
 import { DesignutilityService } from './appServices/designutility.service';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
+import { Comp3Component } from './comp3/comp3.component';
+import { Comp4Component } from './comp4/comp4.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +75,11 @@ import { DesignutilityService } from './appServices/designutility.service';
     ParentComponent,
     ChildComponent,
     Card2Component,
-    Card1Component
+    Card1Component,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
+    Comp4Component
   ],
   imports: [
     BrowserModule,

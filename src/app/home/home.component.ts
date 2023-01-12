@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DesignutilityService } from '../appServices/designutility.service';
 
 @Component({
   selector: 'app-home',
@@ -17,8 +18,13 @@ export class HomeComponent implements OnInit {
   ]
 
   statusOnline: boolean = true;
+  userName: string = "UxTrendz"
 
-  constructor() { }
+  constructor(private _designServices: DesignutilityService) {
+    this._designServices.userName.subscribe(uname => {
+      this.userName = uname
+    })
+   }
 
   ngOnInit(): void {
   }
