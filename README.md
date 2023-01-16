@@ -29,5 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Issues in files with reference to Video Numbers
 YouTube Playlist link: 
 https://www.youtube.com/watch?v=H2TUbmlh4YQ&list=PLLhsXdvz0qjL1HVD2jAtlvoDmS5qj0OvA
-Video 19: Issue in routing
-Video 37: Issue while applying @ChildContent
+1. Video 19: Issue in routing
+2. Video 37: Issue while applying @ChildContent
