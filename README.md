@@ -27,5 +27,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Issues in files with reference to Video Numbers
-YouTube Playlist link: https://www.youtube.com/watch?v=H2TUbmlh4YQ&list=PLLhsXdvz0qjL1HVD2jAtlvoDmS5qj0OvA
+YouTube Playlist link: 
+1. https://www.youtube.com/watch?v=H2TUbmlh4YQ&list=PLLhsXdvz0qjL1HVD2jAtlvoDmS5qj0OvA
 Video 19: Issue in routing
+
+2. https://www.youtube.com/watch?v=nwUdFeM6sh8&list=PLLhsXdvz0qjL1HVD2jAtlvoDmS5qj0OvA&index=37
+Video 37: Issue while applying @ChildContent
