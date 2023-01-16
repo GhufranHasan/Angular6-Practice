@@ -30,6 +30,8 @@ export class Comp2Component implements OnInit, AfterContentInit {
 
   clickMe() {
     alert(this.userName)
+    var text =  this.renderer.createText('this text s created by renderer')
+    this.renderer.appendChild(this.childParagraph.nativeElement, text)
   }
 
 
