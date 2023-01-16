@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ContentChild, ElementRef, OnInit, AfterContentInit, Renderer2 } from '@angular/core';
 import { DesignutilityService } from '../appServices/designutility.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { DesignutilityService } from '../appServices/designutility.service';
   templateUrl: './comp2.component.html',
   styleUrls: ['./comp2.component.css']
 })
-export class Comp2Component implements OnInit {
+export class Comp2Component implements OnInit, AfterContentInit {
 
   // constructor(private _designServices: DesignutilityService) {
   //   this._designServices.userName.subscribe(uname => {
@@ -15,10 +15,17 @@ export class Comp2Component implements OnInit {
   // }
   userName: string = "Default Value";
 
-  constructor() {
-  }
+  @ContentChild('childCon') childParagraph!: ElementRef;
+
+  constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {
+    // console.log(this.childParagraph)
+  }
+  
+  ngAfterContentInit(): void {
+    console.log(this.childParagraph)
+    this.renderer.setStyle(this.childParagraph.nativeElement, 'color', 'red')
   }
 
   clickMe() {

@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, AfterViewInit, Renderer2 } from '@angular/core';
 import { DesignutilityService } from '../appServices/designutility.service';
 import { Comp2Component } from './../comp2/comp2.component';
 
@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('box') box!: ElementRef
   @ViewChild(Comp2Component) child!: Comp2Component 
 
-  constructor() {}
+  constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {
     // console.log(this.box)
@@ -38,6 +38,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     // console.log(this.box)
+    this.renderer.setStyle(this.box.nativeElement, 'backgroundColor', 'red')
+    this.renderer.setStyle(this.box.nativeElement, 'color', 'white')
+    this.renderer.addClass(this.box.nativeElement, 'myClass')
+    this.renderer.setAttribute(this.box.nativeElement, 'title', 'this is test title')
     // this.box.nativeElement.style.backgroundColor = "blue"
     // this.box.nativeElement.classList = "boxBlue"
     // this.box.nativeElement.innerHTML = "This is modified HTML"
