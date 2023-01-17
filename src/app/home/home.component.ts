@@ -1,6 +1,8 @@
-import { Component, ElementRef, OnInit, ViewChild, AfterViewInit, Renderer2 } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, AfterViewInit, Renderer2, HostListener } from '@angular/core';
 import { DesignutilityService } from '../appServices/designutility.service';
 import { Comp2Component } from './../comp2/comp2.component';
+
+declare var $: any;
 
 @Component({
   selector: 'app-home',
@@ -28,12 +30,26 @@ export class HomeComponent implements OnInit, AfterViewInit {
   //  }
 
   @ViewChild('box') box!: ElementRef
-  @ViewChild(Comp2Component) child!: Comp2Component 
+  @ViewChild(Comp2Component) child!: Comp2Component
+  
+  @HostListener('click') myClick() {
+    alert('clicked')
+  }
+
+  @HostListener('window:scroll', ['$event']) myScroll() {
+    console.log("Scrolling")
+  }
 
   constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {
-    // console.log(this.box)
+    console.log(this.box)
+    // var num = 1;
+    // $(window).scroll(function(){
+      // num = num + 1
+      // console.log(num)
+      // console.log('window scrolling')
+    // })
   }
 
   ngAfterViewInit(): void {

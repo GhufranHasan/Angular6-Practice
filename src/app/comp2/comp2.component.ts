@@ -1,4 +1,5 @@
-import { Component, ContentChild, ElementRef, OnInit, AfterContentInit, Renderer2 } from '@angular/core';
+import { TestdirectiveDirective } from './../appDirectives/testdirective.directive';
+import { Component, ContentChild, ElementRef, OnInit, AfterContentInit, Renderer2, ViewChild } from '@angular/core';
 import { DesignutilityService } from '../appServices/designutility.service';
 
 @Component({
@@ -17,6 +18,8 @@ export class Comp2Component implements OnInit, AfterContentInit {
 
   @ContentChild('childCon') childParagraph!: ElementRef;
 
+  @ViewChild(TestdirectiveDirective) myDir!: TestdirectiveDirective
+
   constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {
@@ -30,8 +33,12 @@ export class Comp2Component implements OnInit, AfterContentInit {
 
   clickMe() {
     alert(this.userName)
-    var text =  this.renderer.createText('this text s created by renderer')
+    var text =  this.renderer.createText('this text is created by renderer')
     this.renderer.appendChild(this.childParagraph.nativeElement, text)
+  }
+
+  changeColor(color: string) {
+    // this.myDir.changeBg(color)
   }
 
 
