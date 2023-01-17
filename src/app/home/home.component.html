@@ -26,8 +26,11 @@
             <button (click)="callChildMethod()">Call Child Method</button>
         </div>
         <div class="col-md-6">
-            <app-comp2 #childCon>This is ng content paragraph</app-comp2>
+            <app-comp2>
+                <p #childCon>This is ng content paragraph</p>
+            </app-comp2>
         </div>
+
         <div class="col-md-6">
             <!-- <app-comp3></app-comp3> -->
         </div>
